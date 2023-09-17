@@ -79,7 +79,7 @@
                             <!-- Signup Form -->
                             <div class="custom-form">
                                 <div id="dvAlert" class="alert alert-success alert-dismissible d-none">
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    <button type="button" class="btn-close" onclick="mAlertClose()"></button>
                                     <span id="SpMSG"></span>
                                 </div>
                                 <div class="mb-3">
@@ -152,7 +152,6 @@
 
         if (gblStrMessage != null && gblStrMessage != "" && gblStrMessage != undefined) {
             alertMsg("error", gblStrMessage);
-            setTimeout(mAlertClose, 3000);
         }
 
         function Validate() {
@@ -200,7 +199,6 @@
 
             if (!isValid) {
                 alertMsg("error", strMsg);
-                setTimeout(mAlertClose, 3000);
             }
 
             return isValid;
@@ -217,7 +215,6 @@
                         $('#txtusername').addClass("red-border");
                         $('#txtusername').val('');
                         alertMsg("error", data);
-                        setTimeout(mAlertClose, 3000);
                     }
                     else {
                         $('#txtusername').removeClass("red-border");

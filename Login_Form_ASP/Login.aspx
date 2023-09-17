@@ -77,7 +77,7 @@
                             <!-- Login Form -->
                             <div class="custom-form">
                                 <div id="dvAlert" class="alert alert-success alert-dismissible d-none">
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    <button type="button" class="btn-close" onclick="mAlertClose()"></button>
                                     <span id="SpMSG"></span>
                                 </div>
                                 <div class="mb-3">
@@ -136,7 +136,6 @@
         var gblStrMessageType = '<%=gblStrMessageType %>';
         if (gblStrMessage != null && gblStrMessage != "" && gblStrMessage != undefined) {
             alertMsg("error", gblStrMessage);
-            setTimeout(mAlertClose, 3000);
         }
 
         $(document).ready(function () {
@@ -152,7 +151,6 @@
         });
 
         function Validate() {
-            debugger;
             var isValid = true;
             var strMsg = "";
 
