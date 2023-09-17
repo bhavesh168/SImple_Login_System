@@ -78,7 +78,7 @@
                         <div class="card-body">
                             <!-- Signup Form -->
                             <div class="custom-form">
-                                <div class="dvAlert alert alert-success alert-dismissible d-none">
+                                <div id="dvAlert" class="alert alert-success alert-dismissible d-none">
                                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                                     <span id="SpMSG"></span>
                                 </div>
@@ -173,7 +173,6 @@
             else {
                 $('#txtname').removeClass("red-border");
             }
-            debugger;
             if (username == null || username == "" || username == undefined) {
                 $('#txtusername').addClass("red-border");
                 strMsg += "Please Enter username <br/>";

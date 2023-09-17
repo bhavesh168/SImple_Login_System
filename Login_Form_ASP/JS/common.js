@@ -10,12 +10,12 @@
             break;
     }
 
-    $(".dvAlert").removeClass("d-none");
-    $(".dvAlert").addClass(dvClass);
+    $("#dvAlert").removeClass("d-none");
+    $("#dvAlert").addClass(dvClass);
     $("#SpMSG").html(Msg);
     setTimeout(mAlertClose, 3000);
 }
 
 function mAlertClose() {
-    $('.dvAlert').addClass("d-none");
+    $('#dvAlert').addClass("d-none");
 }

@@ -10,15 +10,15 @@
 namespace Login_Form_ASP {
     
     
-    public partial class SignUp {
+    public partial class Login {
         
         /// <summary>
-        /// FRM_1 control.
+        /// FRM_3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm FRM_1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm FRM_3;
     }
 }

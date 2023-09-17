@@ -76,7 +76,7 @@
                         <div class="card-body">
                             <!-- Login Form -->
                             <div class="custom-form">
-                                <div class="dvAlert alert alert-success alert-dismissible d-none">
+                                <div id="dvAlert" class="alert alert-success alert-dismissible d-none">
                                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                                     <span id="SpMSG"></span>
                                 </div>
@@ -152,6 +152,7 @@
         });
 
         function Validate() {
+            debugger;
             var isValid = true;
             var strMsg = "";
 
@@ -177,7 +178,6 @@
 
             if (!isValid) {
                 alertMsg("error", strMsg);
-                setTimeout(mAlertClose, 3000);
             }
 
             return isValid;
